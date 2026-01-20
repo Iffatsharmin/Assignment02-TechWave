@@ -6,15 +6,14 @@
   color: white;
 }
 
-body {
-    background-color: #230E3D;
-}
 /*header section*/
 .navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #1A0B2E;
 }
+
 .brand {
     font-weight: 600;
     font-size: 46px;
@@ -125,7 +124,10 @@ body {
     flex-direction: column;
     align-items: center;
     margin-left: 200px;
-    margin-right: 200px;
+    margin-right: 200px;  
+}
+.about {
+    background-color: #1A0B2E;
 }
 .stat h4 {
     color: #00ff88;
@@ -139,6 +141,62 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+/*why choose section*/
+.why-choose {
+    padding: 120px 200px 120px 200px;
+    background-color: #230E3D;
+}
+.why-choose h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cadr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 270px);
+    gap: 30px;
+}
+.card-item image {
+    height: 60px;
+    width: 60px;
+}
+.card-item p {
+    text-align: start;
+}
+.card-item h5 {
+    text-align: start;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.card-item {
+    background-color: #351165;
+    padding: 40px;
+    border-radius: 40px;
+
+    
+}
+
+.one {
+    grid-column: span 1;
+    grid-row: span 2;
+    
+}
+.two {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.three {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.four {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.five {
+    grid-column: span 1;
+    grid-row: span 1;
 }
 /*shared style */
 .font-bold {
@@ -156,6 +214,11 @@ body {
     font-size: 16;
     color: white;
     text-align: center;
+}
+.card-h {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
 }
 .button-cta {
     background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
@@ -229,5 +292,13 @@ body {
 }
 .stat-items p {
     font-size: 14px;
+}
+.cadr {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+.card-item {
+    grid-column: auto;
+    grid-row: auto;
 }
 }
