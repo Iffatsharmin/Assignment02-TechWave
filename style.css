@@ -440,7 +440,7 @@ body {
 }
 .cadr {
     display: grid;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
 }
 .card-item {
     grid-column: auto;
@@ -461,5 +461,7 @@ body {
 .host {
     display: grid;
     grid-template-columns: 1fr;
+    height: 483px;
+    width: 400px;
 }
 }
